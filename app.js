@@ -20,7 +20,8 @@ app.use(expressSanitizer());
 // Autorisation CORS
 app.use(
 	cors({
-		origin: "https://nostradakick-gensane.surge.sh/"
+		origin: "https://nostradakick-gensane.surge.sh",
+		credentials: true,
 	}),
 );
 // origin: "http://localhost:5173", // URL frontend
